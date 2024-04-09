@@ -14,7 +14,8 @@ import { Switch } from "@/components/ui/switch"
 
 const notifications = [
   {
-    title: "2000"
+    title: "2000",
+    description:""
     
   }
 ]
@@ -53,7 +54,7 @@ export function TeamScoreCard({ className, ...props }: CardProps) {
                   {notification.title}
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  {notification.description}
+                  {notification?.description}
                 </p>
               </div>
             </div>
